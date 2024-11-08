@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  background: #84c1ff;
+  color: #ecf0f1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.initials-container {
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  margin-right:35rem;
+  margin-bottom:10rem;
+  height: 45px;
+  border-radius: 100%;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 
+  
+  120px 0 0 0 #0014ac, 
+  120px 90px 0 0 #0014ac, 
+  120px 180px 0 0 #0014ac, 
+  180px 0 0 0 #0014ac, 
+  180px 90px 0 0 #0014ac, 
+  240px 0 0 0 #0014ac,
+  240px 90px 0 0 #0014ac,
+  240px 180px 0 0 #0014ac,
+
+  
+  360px 0 0 0 #0014ac, 
+  360px 60px 0 0 #0014ac,
+  360px 120px 0 0 #0014ac, 
+  360px 240px 0 0 #0014ac, 
+  420px 0 0 0 #0014ac, 
+  420px 240px 0 0 #0014ac,
+  420px 120px 0 0 #0014ac,
+  480px 0 0 0 #0014ac,
+  480px 180px 0 0 #0014ac,
+  480px 120px 0 0 #0014ac, 
+  480px 240px 0 0 #0014ac;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+header {
+  padding: 0rem;
+  text-align: center;
+  background: #0014ac;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #0014ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+footer .footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .footer-info span:not(:last-child):after {
+  content: "•";
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
